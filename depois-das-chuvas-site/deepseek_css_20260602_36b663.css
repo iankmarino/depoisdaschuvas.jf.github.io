@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5DEB3; /* Wheat */
+    color: #2c1e0f;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    padding: 0 0 2rem 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #800000; /* Maroon */
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 6px solid #A52A2A;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.subhead {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ffe0b3;
+}
+
+/* Títulos principais (subtítulos no corpo) */
+h2 {
+    color: #A52A2A; /* Brown */
+    font-size: 1.9rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #800000;
+    padding-left: 1rem;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+/* Listas */
+ul, ol {
+    margin: 0.75rem 0 1rem 2rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+    font-size: 1.02rem;
+}
+
+/* Botões dos formulários */
+.botoes-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.btn {
+    background-color: #800000;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a00000;
+    transform: scale(1.01);
+}
+
+.social-link {
+    background-color: #A52A2A;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.social-link:hover {
+    background-color: #800000;
+}
+
+/* Footer com logos */
+footer {
+    background-color: #800000;
+    color: #f0e2c5;
+    margin-top: 3rem;
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.logos img {
+    max-height: 70px;
+    width: auto;
+    object-fit: contain;
+    background-color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.creditos {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .subhead {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .botoes-form {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .logos img {
+        max-height: 55px;
+    }
+}
